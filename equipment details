@@ -1,0 +1,50 @@
+<section class="bg-gray-50 py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    
+    <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">
+      Equipment Details
+    </h2>
+
+    <div class="overflow-x-auto bg-white shadow-xl rounded-2xl border border-gray-200">
+      <table class="min-w-full divide-y divide-gray-200">
+        
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Quantity</th>
+            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Capacity</th>
+            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">MOC</th>
+            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-800">Equipment Details</th>
+          </tr>
+        </thead>
+
+        <tbody class="divide-y divide-gray-200 text-gray-700">
+
+          <tr><td class="px-6 py-4">1 No</td><td>6000 L</td><td>SS-316</td><td>Rotary Extractor</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>5000 L</td><td>SS-316</td><td>Vertical Extractor</td></tr>
+          <tr><td class="px-6 py-4">2 Nos</td><td>6000 L</td><td>SS-316</td><td>Vertical Extractor</td></tr>
+          <tr><td class="px-6 py-4">3 Nos</td><td>5000 L</td><td>SS-316</td><td>Reactor</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>3000 L</td><td>SS-316</td><td>Reactor</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>1000 L</td><td>SS-316</td><td>Reactor</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>2000 L</td><td>MS-GL</td><td>Reactor</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>100 L</td><td>Glass</td><td>AGLR</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>—</td><td>SS-316</td><td>High Vacuum System (1 torr)</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>500 L/hour</td><td>SS-316</td><td>Rising Film Evaporator</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>300 L/hour</td><td>SS-304</td><td>Calandria</td></tr>
+          <tr><td class="px-6 py-4">1 No (48”) </td><td>—</td><td>SS-304</td><td>Centrifuge</td></tr>
+          <tr><td class="px-6 py-4">1 No + 1 No</td><td>750 L / 200 L</td><td>SS-304</td><td>Nutsche Filter / Leaf Filter</td></tr>
+          <tr><td class="px-6 py-4">2 Nos</td><td>300 L / 750 L</td><td>PP-FRP / SS</td><td>Ion Exchange Resin Columns</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>96 Trays</td><td>SS-316</td><td>Tray Drier</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>24 Trays</td><td>SS-316</td><td>Vacuum Tray Drier</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>100 L/hour</td><td>SS-316</td><td>Spray Dryer</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>—</td><td>SS-316 GMP</td><td>Multi Mill</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>750 L</td><td>SS-316</td><td>Blender</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>—</td><td>SS-316 GMP</td><td>Sifter</td></tr>
+          <tr><td class="px-6 py-4">3 Nos</td><td>25 KL</td><td>MS</td><td>Solvent Storage Tanks</td></tr>
+          <tr><td class="px-6 py-4">1 No</td><td>2 TPH</td><td>MS</td><td>Boiler</td></tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>

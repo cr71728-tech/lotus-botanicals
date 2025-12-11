@@ -1,0 +1,39 @@
+<section class="bg-gray-50 py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">
+      Quality Assurance
+    </h2>
+
+    <div class="bg-white shadow-xl rounded-2xl p-10 border border-gray-200">
+      
+      <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+        To meet the standards that our customers expect, Lotus Botanicals LLP
+        implements internationally benchmarked Quality Management Systems (QMS)
+        across all functions. Our teams are committed to maintaining a strong
+        culture of quality, documentation, compliance, and continuous improvement.
+      </p>
+
+      <ul class="list-disc ml-6 space-y-3 text-gray-700 text-lg">
+        <li>Implement internationally benchmarked QMS (Quality Management Systems)</li>
+        <li>Employees maintain a strong commitment to quality culture</li>
+        <li>Strict implementation of Good Documentation Practices (GDP)</li>
+        <li>
+          Quality Assurance ensures uniform standards across the organization,
+          including quality control, compliance, training, and turnaround times
+        </li>
+        <li>
+          Quality by design, electronic quality systems, vendor qualification,
+          information services, and self-inspections
+        </li>
+        <li>
+          Annual Product Quality Review (APQR) and continuous quality improvement
+        </li>
+        <li>
+          Robust product release procedures ensuring quality, safety, and compliance
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>

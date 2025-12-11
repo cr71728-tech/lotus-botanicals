@@ -1,21 +1,61 @@
-<!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts." />
   <title>Lotus Botanicals LLP</title>
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Preload fonts for better rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="font-sans">
-  <nav class="p-4 bg-green-700 text-white">
-    <a href="index.html" class="mr-4">Home</a>
-    <a href="about.html" class="mr-4">About</a>
-    <a href="business.html" class="mr-4">Business Areas</a>
-    <a href="team.html" class="mr-4">Team</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <section class="p-10">
-    <h1 class="text-4xl font-bold text-green-700">Lotus Botanicals LLP</h1>
-    <p class="mt-4">Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts.</p>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+      <!-- Brand -->
+      <a href="index.html" class="text-2xl font-bold tracking-wide">
+        Lotus Botanicals LLP
+      </a>
+
+      <!-- Navbar -->
+      <nav class="hidden md:flex space-x-6" aria-label="Main Navigation">
+        <a href="index.html" class="hover:text-green-300 font-medium">Home</a>
+        <a href="about.html" class="hover:text-green-300 font-medium">About</a>
+        <a href="business.html" class="hover:text-green-300 font-medium">Business Areas</a>
+        <a href="team.html" class="hover:text-green-300 font-medium">Team</a>
+        <a href="contact.html" class="hover:text-green-300 font-medium">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden" aria-label="Open Menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto p-10 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-green-800">
+      Lotus Botanicals LLP
+    </h1>
+
+    <p class="mt-4 text-lg md:text-xl text-gray-700">
+      Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts.
+    </p>
   </section>
+
 </body>
 </html>
+

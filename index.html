@@ -1,61 +1,235 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts." />
+  <meta name="description" content="Lotus Botanicals LLP — Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts." />
   <title>Lotus Botanicals LLP</title>
 
-  <!-- Tailwind -->
+  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Optional: Preload fonts for better rendering -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Smooth Scroll -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
-<body class="font-sans bg-gray-50 text-gray-800">
+<body class="font-sans text-gray-800 bg-gray-50">
 
-  <!-- Header -->
-  <header class="bg-green-800 text-white shadow">
+  <!-- ================= HEADER ================= -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
-      <!-- Brand -->
-      <a href="index.html" class="text-2xl font-bold tracking-wide">
-        Lotus Botanicals LLP
-      </a>
+      <!-- Brand Name -->
+      <a href="#home" class="text-2xl font-bold text-gray-800">Lotus Botanicals LLP</a>
 
-      <!-- Navbar -->
-      <nav class="hidden md:flex space-x-6" aria-label="Main Navigation">
-        <a href="index.html" class="hover:text-green-300 font-medium">Home</a>
-        <a href="about.html" class="hover:text-green-300 font-medium">About</a>
-        <a href="business.html" class="hover:text-green-300 font-medium">Business Areas</a>
-        <a href="team.html" class="hover:text-green-300 font-medium">Team</a>
-        <a href="contact.html" class="hover:text-green-300 font-medium">Contact</a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8 text-lg font-medium">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#capabilities" class="hover:text-green-600">Capabilities</a>
+        <a href="#quality" class="hover:text-green-600">Quality</a>
+        <a href="#equipment" class="hover:text-green-600">Equipment</a>
+        <a href="#team" class="hover:text-green-600">Team</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button class="md:hidden" aria-label="Open Menu">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
-          viewBox="0 0 24 24">
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16" />
+            d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden bg-white shadow-lg border-t">
+      <nav class="flex flex-col p-4 space-y-4 text-lg font-medium">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#capabilities" class="hover:text-green-600">Capabilities</a>
+        <a href="#quality" class="hover:text-green-600">Quality</a>
+        <a href="#equipment" class="hover:text-green-600">Equipment</a>
+        <a href="#team" class="hover:text-green-600">Team</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-7xl mx-auto p-10 text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-green-800">
-      Lotus Botanicals LLP
-    </h1>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.onclick = () => {
+      mobileMenu.classList.toggle("hidden");
+    }
+  </script>
 
-    <p class="mt-4 text-lg md:text-xl text-gray-700">
+  <!-- Adds spacing so content isn't hidden under fixed header -->
+  <div class="pt-24"></div>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="text-center py-24 px-6 bg-white">
+    <h1 class="text-5xl font-extrabold text-gray-900">Lotus Botanicals LLP</h1>
+    <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
       Manufacturers of nutraceuticals, phytochemicals, APIs & herbal extracts.
     </p>
   </section>
 
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Us</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Lotus Botanicals LLP is dedicated to producing high-quality nutraceutical and phytochemical products
+        with globally compliant processes, modern equipment, and a strong commitment to excellence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CAPABILITIES ================= -->
+  <section id="capabilities" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Business Areas & Capabilities</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-8 shadow-lg bg-gray-50 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-2 text-green-700">Nutraceuticals</h3>
+          <p class="text-gray-700">High-purity plant-based nutraceutical ingredients.</p>
+        </div>
+
+        <div class="p-8 shadow-lg bg-gray-50 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-2 text-green-700">Phytochemicals</h3>
+          <p class="text-gray-700">Advanced extraction processes for botanical actives.</p>
+        </div>
+
+        <div class="p-8 shadow-lg bg-gray-50 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-2 text-green-700">APIs</h3>
+          <p class="text-gray-700">Compliant manufacturing of active pharmaceutical intermediates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUALITY ================= -->
+  <section id="quality" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">
+        Quality Assurance
+      </h2>
+
+      <div class="bg-white shadow-xl rounded-2xl p-10 border border-gray-200">
+
+        <p class="text-gray-700 leading-relaxed mb-8 text-lg">
+          At Lotus Botanicals LLP, quality is embedded into every stage of our operations. 
+          We implement internationally benchmarked Quality Management Systems (QMS) to 
+          consistently deliver products that meet global regulatory and customer expectations.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-green-700 mb-6">
+          Key Quality Practices
+        </h3>
+
+        <ul class="list-disc ml-6 space-y-4 text-gray-700 text-lg leading-relaxed">
+          <li>Globally aligned Quality Management Systems (QMS)</li>
+          <li>Strong organizational culture focused on compliance</li>
+          <li>Strict adherence to Good Documentation Practices (GDP)</li>
+          <li>Uniform QA oversight across all functions</li>
+          <li>Quality by Design (QbD), e-quality systems, vendor qualification</li>
+          <li>Annual Product Quality Review (APQR)</li>
+          <li>Robust product release procedures ensuring safety & compliance</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EQUIPMENT ================= -->
+  <section id="equipment" class="bg-white py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-center mb-10">Equipment Details</h2>
+
+      <div class="overflow-x-auto bg-white shadow-xl rounded-2xl border border-gray-200">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-6 py-4 text-left text-sm font-semibold">Quantity</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold">Capacity</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold">MOC</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold">Equipment</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-gray-700 text-sm">
+            <tr><td class="px-6 py-4">1 No</td><td class="px-6 py-4">6000 L</td><td class="px-6 py-4">SS-316</td><td class="px-6 py-4">Rotary Extractor</td></tr>
+            <tr><td class="px-6 py-4">1 No</td><td class="px-6 py-4">5000 L</td><td class="px-6 py-4">SS-316</td><td class="px-6 py-4">Vertical Extractor</td></tr>
+            <tr><td class="px-6 py-4">2 Nos</td><td class="px-6 py-4">6000 L</td><td class="px-6 py-4">SS-316</td><td class="px-6 py-4">Vertical Extractor</td></tr>
+            <tr><td class="px-6 py-4">3 Nos</td><td class="px-6 py-4">5000 L</td><td class="px-6 py-4">SS-316</td><td class="px-6 py-4">Reactor</td></tr>
+            <tr><td class="px-6 py-4">1 No</td><td class="px-6 py-4">100 L/hour</td><td class="px-6 py-4">SS-316</td><td class="px-6 py-4">Spray Dryer</td></tr>
+            <tr><td class="px-6 py-4">3 Nos</td><td class="px-6 py-4">25 KL</td><td class="px-6 py-4">MS</td><td class="px-6 py-4">Solvent Storage Tanks</td></tr>
+            <tr><td class="px-6 py-4">1 No</td><td class="px-6 py-4">2 TPH</td><td class="px-6 py-4">MS</td><td class="px-6 py-4">Boiler</td></tr>
+            <!-- Add more rows from your original table here -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TEAM ================= -->
+  <section id="team" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-center mb-12">Management Team</h2>
+
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+
+        <div>
+          <img src="images/team1.jpg" class="w-40 h-40 rounded-full mx-auto object-cover shadow" alt="P V S Narasimha Raju">
+          <h3 class="text-xl font-semibold mt-4">P V S Narasimha Raju</h3>
+          <p class="text-gray-600">Designated Partner</p>
+        </div>
+
+        <div>
+          <img src="images/team2.jpg" class="w-40 h-40 rounded-full mx-auto object-cover shadow" alt="Dr. C. B. Rajashekar Reddy">
+          <h3 class="text-xl font-semibold mt-4">Dr. C. B. Rajashekar Reddy</h3>
+          <p class="text-gray-600">Technical Head – Operations</p>
+        </div>
+
+        <div>
+          <img src="images/team3.jpg" class="w-40 h-40 rounded-full mx-auto object-cover shadow" alt="Dr. D. Mogili Reddy">
+          <h3 class="text-xl font-semibold mt-4">Dr. D. Mogili Reddy</h3>
+          <p class="text-gray-600">Quality Head</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="bg-white py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-700 text-lg mb-6">
+        Reach out to us for business inquiries, product details, or partnerships.
+      </p>
+
+      <p class="text-gray-700 text-lg">📍 Andhra Pradesh, India</p>
+      <p class="text-gray-700 text-lg">✉️ info@lotusbotanicals.com</p>
+      <p class="text-gray-700 text-lg">📞 +91 ————</p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Lotus Botanicals LLP. All Rights Reserved.</p>
+  </footer>
+
 </body>
+</html>
+
 </html>
 
